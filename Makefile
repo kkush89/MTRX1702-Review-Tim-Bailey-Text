@@ -24,6 +24,3 @@ helloWorld.o: firstProgram.c
 .PHONY : clean
 clean:
 	-rm $(TARGET) $(objectFiles)
-
-
-
