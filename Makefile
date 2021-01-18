@@ -1,9 +1,9 @@
 CC=gcc 			
 CFLAGS= -g -Wall -Wpedantic -Wextra  -Werror -Wuninitialized -fsanitize=address
 LIBS= -lm	    
-TARGET= helloWorld
+TARGET= test
 
-sourceFILES = $(wildcard *.c) 
+sourceFILES = TypOpExp.c
 #headerFILES = $(wildcard *.c)
 objectFiles = $(wildcard *.o)
 
@@ -15,8 +15,8 @@ all:  $(TARGET)
 $(TARGET):$(objectFiles)
 	$(CC) $(CFLAGS) -o $(TARGET) $(sourceFILES) $(LIBS)
 
-helloWorld.o: firstProgram.c
-	$(CC) -c $(CFLAGS) -o helloWorld.o firstProgram.c
+test.o: TypOpExp.c
+	$(CC) -c $(CFLAGS) -o test.o TypOpExp.c
 
 
 #$(CC) -o $(TARGET) $(objectFiles)
