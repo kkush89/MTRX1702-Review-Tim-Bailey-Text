@@ -16,5 +16,5 @@ int main(){
 	//we can use #define <name> <value> to represent symbolic constants
 	//NB; #define is a preprocessor command
 
-	//type cast your variables to aovid type conversion errors
+	//type cast your variables to aovid type conversion errors	
 }
